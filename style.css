@@ -1,0 +1,346 @@
+/*
+Theme Name: Stitches
+Theme URI: http://cborchert.com
+Author: Christopher Borchert
+Author URI: http://cborchert.com
+Description: A theme for crafty folks named Morgan! Based on pastels and bold styles.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: stitches
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+/* line 19, css/style.scss */
+html {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 24, css/style.scss */
+body {
+  width: 100%;
+  height: 100%;
+  background: #cfebec;
+  color: #1f518b;
+  font-size: 16px;
+  line-height: 1.5em;
+  font-family: "Droid Sans", sans-serif;
+}
+
+/* line 39, css/style.scss */
+h1 {
+  font-size: 3em;
+  line-height: 1.5em;
+  font-family: "Lobster", sans-serif;
+}
+
+/* line 46, css/style.scss */
+h2 {
+  font-family: "Josefin Slab", serif;
+}
+
+/* line 46, css/style.scss */
+h3 {
+  font-family: "Josefin Slab", serif;
+}
+
+/* line 46, css/style.scss */
+h4 {
+  font-family: "Josefin Slab", serif;
+}
+
+/* line 46, css/style.scss */
+h5 {
+  font-family: "Josefin Slab", serif;
+}
+
+/* line 51, css/style.scss */
+h2 {
+  font-size: 2em;
+  line-height: 1.5em;
+  font-weight: 600;
+}
+
+/* line 57, css/style.scss */
+a {
+  color: #d652b6;
+  text-decoration: none;
+}
+/* line 60, css/style.scss */
+a:hover {
+  color: #eb4198;
+  text-decoration: underline;
+}
+
+/* line 67, css/style.scss */
+header {
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+  background: #ffef7b;
+  z-index: 500;
+}
+/* line 75, css/style.scss */
+header .logoStitches {
+  font-size: 5em;
+  font-family: "Lobster", sans-serif;
+  color: #d652b6;
+  padding-left: 15px;
+}
+/* line 82, css/style.scss */
+header .logoMogo {
+  font-size: 1.5em;
+  font-family: "Josefin Slab", serif;
+  padding-left: 15px;
+  margin-left: 2em;
+  color: #1f518b;
+}
+/* line 91, css/style.scss */
+header nav {
+  padding: 0;
+  margin: 0;
+  background: #fff5ae;
+}
+/* line 96, css/style.scss */
+header ul {
+  margin-bottom: 0;
+}
+/* line 98, css/style.scss */
+header ul li {
+  padding: 10px;
+  list-style: none;
+}
+
+/** Sticky footer will appear beneath the links on mobile sites and as a sticky footer on larger viewports**/
+/* line 107, css/style.scss */
+.stickyFooter {
+  padding: 10px 5px;
+  margin: 0;
+  background: #1f518b;
+  font-family: "Josefin Slab", serif;
+  font-size: 1.75em;
+  line-height: 1.125em;
+  font-style: bold;
+  color: white;
+  text-align: center;
+  z-index: 500;
+}
+
+/* line 122, css/style.scss */
+.emphaticStyle {
+  font-family: "Lobster", sans-serif;
+}
+
+/* line 127, css/style.scss */
+section {
+  padding: 0;
+  margin: 0 auto;
+  background: white;
+  padding: 7.5px 15px;
+}
+
+/* line 134, css/style.scss */
+article, .page-title {
+  margin: 0;
+  padding: 7.5px 15px;
+}
+/* line 137, css/style.scss */
+article h1 a, article h2 a, .page-title h1 a, .page-title h2 a {
+  color: #1f518b;
+}
+
+/* line 142, css/style.scss */
+.page-title {
+  padding-bottom: 0;
+}
+/* line 144, css/style.scss */
+.page-title h1 {
+  margin-bottom: 5px;
+}
+
+/* line 150, css/style.scss */
+.postHeader h1 {
+  font-size: 2em;
+}
+
+/* line 155, css/style.scss */
+.postContent {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 160, css/style.scss */
+.postCommentsPopup {
+  padding-left: 2em;
+}
+
+/* line 164, css/style.scss */
+.commentZone {
+  border: 3px solid #e2f3f4;
+  border-radius: 5px;
+  padding: 15px;
+}
+/* line 168, css/style.scss */
+.commentZone h3 {
+  font-size: 2em;
+  text-shadow: 1px 1px 1px #bde4e5;
+  border-bottom: 2px solid #e2f3f4;
+}
+/* line 174, css/style.scss */
+.commentZone .comment-body {
+  padding-top: 35px;
+  margin: 0;
+  border-bottom: 2px solid #e2f3f4;
+}
+/* line 180, css/style.scss */
+.commentZone ol li {
+  list-style: none;
+}
+
+/* line 188, css/style.scss */
+textarea#comment {
+  width: 100%;
+  max-width: 40em;
+}
+
+/* line 192, css/style.scss */
+.sidebar {
+  margin-top: 20px;
+}
+
+/* line 196, css/style.scss */
+footer {
+  margin-top: 20px;
+  background: white;
+  padding: 5px;
+  color: #1f518b;
+  text-align: center;
+}
+/* line 204, css/style.scss */
+footer h3 {
+  font-family: "Lobster", sans-serif;
+  font-size: 2em;
+}
+/* line 209, css/style.scss */
+footer .imgPlaceholder {
+  background: yellow;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 50%;
+  bottom: 50%;
+  left: 50%;
+  right: 50%;
+  border-radius: 100px;
+  text-align: center;
+  padding: 50px;
+  z-index: inherit;
+}
+
+@media screen and (min-width: 640px) {
+  /* line 230, css/style.scss */
+  header .logoStitches {
+    font-size: 7em;
+  }
+  /* line 234, css/style.scss */
+  header .logoMogo {
+    font-size: 2em;
+  }
+  /* line 237, css/style.scss */
+  header ul li {
+    display: inline-block;
+  }
+
+  /* line 242, css/style.scss */
+  .mainWrapper {
+    padding-bottom: 50px;
+  }
+
+  /* line 248, css/style.scss */
+  .postHeader h1 {
+    font-size: 2.5em;
+  }
+
+  /* line 253, css/style.scss */
+  article {
+    padding: 6.66667px 20px;
+  }
+
+  /* line 257, css/style.scss */
+  section {
+    max-width: 40em;
+    padding: 20px 40px;
+    margin: 20px auto;
+    box-shadow: 1px 1px 5px;
+  }
+
+  /* line 265, css/style.scss */
+  .stickyFooter {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 30px;
+    width: 100%;
+  }
+
+  /* line 273, css/style.scss */
+  footer {
+    padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 900px) {
+  /* line 282, css/style.scss */
+  .postHeader h1 {
+    font-size: 3em;
+  }
+
+  /* line 287, css/style.scss */
+  .contentWithSidebar {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 20px 2.5%;
+    max-width: 60em;
+    float: left;
+  }
+
+  /* line 295, css/style.scss */
+  .sidebar {
+    box-sizing: border-box;
+    width: 30%;
+    margin: 20px 2.5%;
+    max-width: 30em;
+    float: right;
+  }
+
+  /* line 304, css/style.scss */
+  footer {
+    clear: both;
+    width: 100%;
+    margin: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* line 311, css/style.scss */
+  footer div {
+    display: table-cell;
+    vertical-align: top;
+    width: 28%;
+    text-align: left;
+  }
+  /* line 317, css/style.scss */
+  footer .footer1 {
+    margin-left: 2.3%;
+  }
+  /* line 321, css/style.scss */
+  footer .footer2 {
+    margin-left: 2.3%;
+    margin-right: 2.3%;
+  }
+  /* line 327, css/style.scss */
+  footer .footer3 {
+    margin-right: 2.3%;
+  }
+}

@@ -1,0 +1,20 @@
+//Color Palette
+$primary_bg: hsl(182, 44%, 87%);
+$secondary_bg: #ffef7b;
+
+$text_bg_base: hsl(41, 90%, 95%);
+
+$text_primary: #1F518B;
+$link_primary: #d652b6;
+$link_hover: #eb4198;
+
+$text_bg: lighten($text_bg_base, 5%);
+
+
+//Teh fontsorz
+$font_title: 'Lobster', sans-serif;
+$font_subtitle: 'Josefin Slab', serif;
+$font_text: 'Droid Sans', sans-serif;
+
+//paddings, margins, etc.
+$padding: 15px;

@@ -1,0 +1,332 @@
+/*
+Theme Name: Stitches
+Theme URI: http://cborchert.com
+Author: Christopher Borchert
+Author URI: http://cborchert.com
+Description: A theme for crafty folks named Morgan! Based on pastels and bold styles.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags:
+Text Domain: stitches
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import 'variables';
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+
+    background: $primary_bg;
+    color: $text_primary;
+
+    font-size: 16px;
+    line-height: 1.5em;
+
+    font-family: $font_text;
+}
+
+
+
+h1 {
+    font-size: 3em;
+    line-height: 1.5em;
+    font-family:  $font_title;
+}
+
+@for $i from 2 to 6{
+    h#{$i} {
+        font-family: $font_subtitle;
+    }
+}
+
+h2 {
+    font-size: 2em;
+    line-height: 1.5em;
+    font-weight: 600;
+}
+
+a {
+    color: $link_primary;
+    text-decoration: none;
+    &:hover{
+        color: $link_hover;
+        text-decoration: underline;
+    }
+
+}
+
+header {
+    padding: 0;
+    margin: 0;
+    line-height: normal;
+    background: $secondary_bg;
+
+    z-index: 500;
+
+    .logoStitches {
+        font-size: 5em;
+        font-family: $font_title;
+        color: $link_primary;
+        padding-left: $padding;
+
+    }
+    .logoMogo {
+        font-size: 1.5em;
+        font-family: $font_subtitle;
+        padding-left: $padding;
+        margin-left: 2em;
+        color: $text_primary;
+
+    }
+
+    nav{
+        padding: 0;
+        margin: 0;
+        background: lighten($secondary_bg, 10%);
+    }
+    ul{
+        margin-bottom: 0;
+        li {
+            padding: 10px;
+            list-style: none;
+            }
+    }
+}
+
+/** Sticky footer will appear beneath the links on mobile sites and as a sticky footer on larger viewports**/
+
+.stickyFooter{
+        padding: 10px 5px;
+        margin: 0;
+        background: $text_primary;
+
+        font-family: $font_subtitle;
+        font-size: 1.75em;
+        line-height: 1.125em;
+        font-style: bold;
+        color: $text_bg;
+        text-align: center;
+        z-index: 500;
+
+}
+
+.emphaticStyle{
+        font-family: $font_title;
+}
+
+
+section {
+    padding: 0;
+    margin: 0 auto;
+    background: $text_bg;
+    padding: $padding/2 $padding;
+    }
+
+article, .page-title {
+    margin: 0;
+    padding: $padding/2 $padding;
+    h1 a, h2 a{
+        color: $text_primary;
+    }
+}
+
+.page-title {
+    padding-bottom: 0;
+    h1{
+        margin-bottom: 5px;
+    }
+}
+
+.postHeader{
+    h1{
+        font-size: 2em;
+    }
+}
+
+.postContent{
+    padding-top: $padding;
+    padding-bottom: $padding;
+}
+
+.postCommentsPopup{
+        padding-left: 2em;
+}
+
+.commentZone {
+    border: 3px solid lighten($primary_bg, 5%);
+    border-radius: 5px;
+    padding: 15px;
+    h3 {
+        font-size: 2em;
+        text-shadow: 1px 1px 1px darken($primary_bg, 5%);
+        border-bottom: 2px solid lighten($primary_bg, 5%);
+    }
+
+    .comment-body{
+        padding-top: 35px;
+        margin: 0;
+        border-bottom: 2px solid lighten($primary_bg, 5%);
+    }
+
+    ol li{
+        list-style: none;
+        ul.children {
+        }
+    }
+
+}
+
+textarea#comment {
+    width: 100%;
+    max-width: 40em;
+}
+.sidebar {
+    margin-top: 20px;
+}
+
+footer {
+     margin-top: 20px;
+     background: $text_bg;
+     padding: $padding/3;
+     color: $text_primary;
+
+     text-align: center;
+
+     h3 {
+            font-family: $font_title;
+            font-size: 2em;
+        }
+
+    .imgPlaceholder{
+                background: yellow;
+                width: 50px;
+                height: 50px;
+                position: relative;
+                top:50%;
+                bottom:50%;
+                left:50%;
+                right:50%;
+                border-radius: 100px;
+                text-align: center;
+                padding:50px;
+                z-index: inherit;
+            }
+
+}
+
+
+@media screen and (min-width: 640px) {
+   $padding: 20px;
+    header{
+        .logoStitches {
+            font-size: 7em;
+        }
+
+        .logoMogo {
+            font-size: 2em;
+        }
+        ul li{
+            display: inline-block;
+        }
+    }
+
+    .mainWrapper{
+        //So that the sticky footer fits just so!
+        padding-bottom: 50px;
+    }
+
+    .postHeader{
+        h1{
+        font-size: 2.5em;
+        }
+    }
+
+    article {
+      padding: $padding/3 $padding;
+    }
+
+    section {
+        max-width: 40em;
+        padding: $padding $padding*2;
+        margin: $padding auto;
+        box-shadow: 1px 1px 5px;
+
+    }
+
+    .stickyFooter{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 30px;
+        width: 100%;
+    }
+
+    footer{
+        //makes the sticky footer fit just so.
+        padding-bottom: 60px;
+    }
+
+}
+
+@media screen and (min-width: 900px) {
+    .postHeader{
+        h1{
+        font-size: 3em;
+        }
+    }
+
+    .contentWithSidebar{
+            box-sizing: border-box;
+            width: 60%;
+            margin: $padding 2.5%;
+            max-width: 60em;
+            float: left;
+    }
+
+    .sidebar{
+            box-sizing: border-box;
+            width: 30%;
+            margin: $padding 2.5%;
+            max-width: 30em;
+            float: right;
+    }
+
+    footer
+        {
+            clear: both;
+            width: 100%;
+            margin:0;
+            padding-left: 0;
+            padding-right: 0;
+
+            div{
+                display: table-cell;
+                vertical-align: top;
+                width: 28%;
+                text-align: left;
+            }
+            .footer1{
+                margin-left: 2.3%;
+               }
+
+            .footer2{
+                margin-left: 2.3%;
+                margin-right: 2.3%;
+
+            }
+
+            .footer3{
+                margin-right: 2.3%;
+            }
+
+        }
+    }
