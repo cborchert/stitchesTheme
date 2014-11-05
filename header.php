@@ -27,12 +27,13 @@
 
         <!--For Demo Purposes -->
         <?php global $woocommerce; ?>
-        <?php echo sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count);?>
 
         <nav>
             <?php $args = array('theme_location' => 'header-menu');
 
                 wp_nav_menu( $args ); ?>
+            <?php echo $woocommerce->cart->cart_contents_count?"(".sprintf(_n('%d item', '%d items', $woocommerce->cart->cart_contents_count, 'woothemes'), $woocommerce->cart->cart_contents_count)." in cart)":"";?>
+
         </nav>
     </header>
     <div class="stickyFooter">Make sure to check out the <span class="emphaticStyle">orders page!</span></div>

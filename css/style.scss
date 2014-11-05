@@ -92,6 +92,9 @@ header {
         padding: 0;
         margin: 0;
         background: lighten($secondary_bg, 10%);
+        .menu-all-pages-flat-container, .menu{
+            display: inline;
+        }
     }
     ul{
         margin-bottom: 0;
@@ -223,6 +226,58 @@ footer {
 
 }
 
+
+/** Shop formatting **/
+ul.products{
+        list-style: none;
+        padding: 0;
+        padding-bottom: 30px;
+        li{
+            display: inline-block;
+            padding: 4px;
+            border: solid 1px lighten(desaturate($secondary_bg, 100%),10%);
+            border-radius: 5px;
+            margin: $padding/2;
+            box-shadow: 3px 3px 3px lighten(desaturate($secondary_bg, 100%),10%);
+            width: 158px;
+        }
+       .onsale, .add_to_cart_button, .added_to_cart, .price, del, ins, img{
+            display: block;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        h3{
+            word-wrap: break-word;
+            max-width: 100%;
+            text-align: center;
+        }
+
+        ins{
+            text-decoration: none;
+        }
+
+        .attachment-shop_catalog{
+            width: 100%;
+        }
+
+        .added_to_cart, .onsale {
+            font-family: $font_title;
+        }
+
+        .add_to_cart_button {
+            padding-top: 10px;
+        }
+}
+/** Cart formatting **/
+
+
+/** Hide the extra bits **/
+.contentWithSidebar #sidebar {
+    height: 0;
+    display: none;
+    visibility: hidden;
+}
 
 @media screen and (min-width: 640px) {
    $padding: 20px;

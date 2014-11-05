@@ -1,6 +1,6 @@
 </section>
     <section class="sidebar">
-        <ugh>Hellodally!</div>
+        <div>Hellodally!</div>
     </section>
 
     <footer>
