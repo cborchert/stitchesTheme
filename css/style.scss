@@ -269,7 +269,25 @@ ul.products{
             padding-top: 10px;
         }
 }
-/** Cart formatting **/
+
+/** Cart and checkout formatting **/
+.woocommerce .cart-collaterals{
+    .cart_totals, .shipping_calculator{
+        width: 100%;
+        float: none;
+        h2{
+            text-align: left;
+        }
+        .shipping-calculator-button{
+             text-align: center;
+             font-family: $font_title;
+             padding-left: 30px;
+         }
+    }
+}
+.woocommerce .button, .woocommerce input.button{
+    font-family: $font_title;
+}
 
 
 /** Hide the extra bits **/

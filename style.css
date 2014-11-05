@@ -290,9 +290,30 @@ ul.products .add_to_cart_button {
   padding-top: 10px;
 }
 
-/** Cart formatting **/
+/** Cart and checkout formatting **/
+/* line 275, css/style.scss */
+.woocommerce .cart-collaterals .cart_totals, .woocommerce .cart-collaterals .shipping_calculator {
+  width: 100%;
+  float: none;
+}
+/* line 278, css/style.scss */
+.woocommerce .cart-collaterals .cart_totals h2, .woocommerce .cart-collaterals .shipping_calculator h2 {
+  text-align: left;
+}
+/* line 281, css/style.scss */
+.woocommerce .cart-collaterals .cart_totals .shipping-calculator-button, .woocommerce .cart-collaterals .shipping_calculator .shipping-calculator-button {
+  text-align: center;
+  font-family: "Lobster", sans-serif;
+  padding-left: 30px;
+}
+
+/* line 288, css/style.scss */
+.woocommerce .button, .woocommerce input.button {
+  font-family: "Lobster", sans-serif;
+}
+
 /** Hide the extra bits **/
-/* line 276, css/style.scss */
+/* line 294, css/style.scss */
 .contentWithSidebar #sidebar {
   height: 0;
   display: none;
@@ -300,35 +321,35 @@ ul.products .add_to_cart_button {
 }
 
 @media screen and (min-width: 640px) {
-  /* line 285, css/style.scss */
+  /* line 303, css/style.scss */
   header .logoStitches {
     font-size: 7em;
   }
-  /* line 289, css/style.scss */
+  /* line 307, css/style.scss */
   header .logoMogo {
     font-size: 2em;
   }
-  /* line 292, css/style.scss */
+  /* line 310, css/style.scss */
   header ul li {
     display: inline-block;
   }
 
-  /* line 297, css/style.scss */
+  /* line 315, css/style.scss */
   .mainWrapper {
     padding-bottom: 50px;
   }
 
-  /* line 303, css/style.scss */
+  /* line 321, css/style.scss */
   .postHeader h1 {
     font-size: 2.5em;
   }
 
-  /* line 308, css/style.scss */
+  /* line 326, css/style.scss */
   article {
     padding: 6.66667px 20px;
   }
 
-  /* line 312, css/style.scss */
+  /* line 330, css/style.scss */
   section {
     max-width: 40em;
     padding: 20px 40px;
@@ -336,7 +357,7 @@ ul.products .add_to_cart_button {
     box-shadow: 1px 1px 5px;
   }
 
-  /* line 320, css/style.scss */
+  /* line 338, css/style.scss */
   .stickyFooter {
     position: fixed;
     bottom: 0;
@@ -345,18 +366,18 @@ ul.products .add_to_cart_button {
     width: 100%;
   }
 
-  /* line 328, css/style.scss */
+  /* line 346, css/style.scss */
   footer {
     padding-bottom: 60px;
   }
 }
 @media screen and (min-width: 900px) {
-  /* line 337, css/style.scss */
+  /* line 355, css/style.scss */
   .postHeader h1 {
     font-size: 3em;
   }
 
-  /* line 342, css/style.scss */
+  /* line 360, css/style.scss */
   .contentWithSidebar {
     box-sizing: border-box;
     width: 60%;
@@ -365,7 +386,7 @@ ul.products .add_to_cart_button {
     float: left;
   }
 
-  /* line 350, css/style.scss */
+  /* line 368, css/style.scss */
   .sidebar {
     box-sizing: border-box;
     width: 30%;
@@ -374,7 +395,7 @@ ul.products .add_to_cart_button {
     float: right;
   }
 
-  /* line 359, css/style.scss */
+  /* line 377, css/style.scss */
   footer {
     clear: both;
     width: 100%;
@@ -382,23 +403,23 @@ ul.products .add_to_cart_button {
     padding-left: 0;
     padding-right: 0;
   }
-  /* line 366, css/style.scss */
+  /* line 384, css/style.scss */
   footer div {
     display: table-cell;
     vertical-align: top;
     width: 28%;
     text-align: left;
   }
-  /* line 372, css/style.scss */
+  /* line 390, css/style.scss */
   footer .footer1 {
     margin-left: 2.3%;
   }
-  /* line 376, css/style.scss */
+  /* line 394, css/style.scss */
   footer .footer2 {
     margin-left: 2.3%;
     margin-right: 2.3%;
   }
-  /* line 382, css/style.scss */
+  /* line 400, css/style.scss */
   footer .footer3 {
     margin-right: 2.3%;
   }
