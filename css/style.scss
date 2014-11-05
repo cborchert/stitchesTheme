@@ -285,11 +285,45 @@ ul.products{
          }
     }
 }
-.woocommerce .button, .woocommerce input.button{
+.woocommerce .button, .woocommerce input.button, .single_add_to_cart_button, input[type="submit"]{
     font-family: $font_title;
 }
 
 
+/** Product **/
+#reply-title{
+    font-family: $font_title;
+    font-size: 1.5em;
+}
+
+.comment-form-rating{
+    label:after{
+            content: ": ";
+        }
+}
+.stars{
+    display: inline;
+    span a{
+       padding-right: 10px;
+       padding-left: 10px;
+    }
+
+    .active{
+        background: $secondary_bg;}
+
+}
+
+div.quantity{
+    display: inline;
+}
+
+.single_add_to_cart_button{
+    margin-top: 15px;
+}
+
+input[name="quantity"]{
+    width: 50px;
+}
 /** Hide the extra bits **/
 .contentWithSidebar #sidebar {
     height: 0;
